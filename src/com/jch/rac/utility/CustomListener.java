@@ -1,8 +1,15 @@
 package com.jch.rac.utility;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+
 import io.qameta.allure.Attachment;
 
 public class CustomListener extends CaptureScreenShot implements ITestListener {
@@ -34,6 +41,7 @@ public class CustomListener extends CaptureScreenShot implements ITestListener {
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestSkipped(result);
+		test.log(Status.SKIP, "Skipped: "+result.getName());
 	}
 
 	@Override

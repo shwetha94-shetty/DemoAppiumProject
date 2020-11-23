@@ -1,6 +1,6 @@
 package com.jch.rac.tests;
 
-import org.testng.Assert;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import java.io.IOException;
@@ -15,15 +15,11 @@ public class LoginTest extends BaseSetUp{
 
 	@Test(priority=4, description = "Valid Login with valid email address and password.")
 	@Description("Login to the Application with valid email address and password.")
-	public void userLoginWithEmailAddress() throws InterruptedException, IOException {				
+	public void userLoginWithEmailAddress() throws Exception{
+		test = reports.createTest("Login to App with Email & Password");
 		LoginPage.tapEmailTab(driver);
 		LoginPage.enterEmailAddress(driver, ReadingPropertiesFile.singlePropertiesUtils("EmailAddress"));
 		LoginPage.enterPassword(driver, ReadingPropertiesFile.singlePropertiesUtils("EPassword"));
 		LoginPage.tapLoginButton(driver);	
-	}
-	
-	@Test(priority=5)
-	public void failure() {
-		Assert.assertEquals(false, true);
 	}
 }
