@@ -1,0 +1,1 @@
+{"uuid":"cea0dbae-2faa-4300-9da8-0d047cbc4449","name":"Suite","children":["c1827758-271d-4d83-8f3b-43679bc6a85e"],"befores":[{"name":"androidPhoneConfiguration","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1605854908191,"stop":1605854950498}],"afters":[],"links":[],"start":1605854908153,"stop":1605855045484}
