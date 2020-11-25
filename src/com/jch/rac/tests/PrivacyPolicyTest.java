@@ -19,7 +19,6 @@ public class PrivacyPolicyTest extends BaseSetUp {
 	@Test(priority=3, description = "Accepting the privacy")
 	@Description("Accept the privacy policy")
 	public void acceptingPrivacy() throws InterruptedException {
-		test = reports.createTest("Accept the Privacy Policy");
 		privacyStatus = PrivacyPolicyPage.checkPrivacyPolicyScreenDisplayed(driver);
 		
 		if(privacyStatus == true) {

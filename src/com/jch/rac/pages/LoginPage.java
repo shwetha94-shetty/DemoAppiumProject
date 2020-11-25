@@ -14,7 +14,7 @@ public class LoginPage {
 	static By mobileNoTab = By.xpath("//android.widget.TextView[@text='Mobile No.']");
 	static By IndianCountryCode = By.id("com.jch_hitachi.aircloudglobal:id/text_view_country_number_code_login");
 	static By mobileNumberTextField = By.id("com.jch_hitachi.aircloudglobal:id/edit_text_mobile_number");
-	static By passwordTextField = By.id("com.jch_hitachi.aircloudglobal:id/edit_text_enter_password");
+	static By passwordTextField = By.id("com.jch_hitachi.aircloudglobal:id/edit_text_enter_passwordd");
 	static By loginButton = By.id("com.jch_hitachi.aircloudglobal:id/button_login");
 	static By emailTab= By.id("com.jch_hitachi.aircloudglobal:id/text_view_email_forgot_password");
 	static By emailAddressTextField = By.id("com.jch_hitachi.aircloudglobal:id/edit_text_enter_email");

@@ -16,7 +16,6 @@ public class LoginTest extends BaseSetUp{
 	@Test(priority=4, description = "Valid Login with valid email address and password.")
 	@Description("Login to the Application with valid email address and password.")
 	public void userLoginWithEmailAddress() throws Exception{
-		test = reports.createTest("Login to App with Email & Password");
 		LoginPage.tapEmailTab(driver);
 		LoginPage.enterEmailAddress(driver, ReadingPropertiesFile.singlePropertiesUtils("EmailAddress"));
 		LoginPage.enterPassword(driver, ReadingPropertiesFile.singlePropertiesUtils("EPassword"));

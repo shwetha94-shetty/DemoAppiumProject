@@ -14,7 +14,6 @@ public class IntroductionScreenTest extends BaseSetUp{
 	@Test(priority=2, description="App introduction screens for New Users")
 	@Description("Introduction Screen")
 	public void navigatingThroughIntroductionScreen() {
-		test = reports.createTest("Navigate through Introduction Screen");
 		introStatus = IntroductionPage.checkIntroScreenDisplayed(driver);
 		
 		if(introStatus == true) {

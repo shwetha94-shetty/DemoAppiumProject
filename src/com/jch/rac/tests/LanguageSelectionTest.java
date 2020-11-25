@@ -14,7 +14,6 @@ public class LanguageSelectionTest extends BaseSetUp {
 	@Test(priority=1, description="Select App language")
 	@Description("Select the App language.")
 	public void selectLanguage() {
-		test = reports.createTest("Select App Language");
 		languageModalStatus = LanguageSelectionPage.checkLanguageModalIsDisplayed(driver);
 		
 		if(languageModalStatus==true) {

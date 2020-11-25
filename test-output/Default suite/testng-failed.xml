@@ -3,13 +3,46 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.jch.rac.tests.HomeTest">
+      <class name="com.jch.rac.tests.LanguageSelectionTest">
         <methods>
-          <include name="teadDown"/>
+          <include name="extentConfig"/>
+          <include name="selectLanguage"/>
+          <include name="getResult"/>
           <include name="androidPhoneConfiguration"/>
-          <include name="tapOnActiveRAC"/>
+          <include name="tearDown"/>
+          <include name="extentFlushTest"/>
         </methods>
-      </class> <!-- com.jch.rac.tests.HomeTest -->
+      </class> <!-- com.jch.rac.tests.LanguageSelectionTest -->
+      <class name="com.jch.rac.tests.IntroductionScreenTest">
+        <methods>
+          <include name="extentConfig"/>
+          <include name="getResult"/>
+          <include name="navigatingThroughIntroductionScreen"/>
+          <include name="androidPhoneConfiguration"/>
+          <include name="tearDown"/>
+          <include name="extentFlushTest"/>
+        </methods>
+      </class> <!-- com.jch.rac.tests.IntroductionScreenTest -->
+      <class name="com.jch.rac.tests.LoginTest">
+        <methods>
+          <include name="extentConfig"/>
+          <include name="getResult"/>
+          <include name="androidPhoneConfiguration"/>
+          <include name="tearDown"/>
+          <include name="extentFlushTest"/>
+          <include name="userLoginWithEmailAddress"/>
+        </methods>
+      </class> <!-- com.jch.rac.tests.LoginTest -->
+      <class name="com.jch.rac.tests.PrivacyPolicyTest">
+        <methods>
+          <include name="extentConfig"/>
+          <include name="getResult"/>
+          <include name="androidPhoneConfiguration"/>
+          <include name="tearDown"/>
+          <include name="extentFlushTest"/>
+          <include name="acceptingPrivacy"/>
+        </methods>
+      </class> <!-- com.jch.rac.tests.PrivacyPolicyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
